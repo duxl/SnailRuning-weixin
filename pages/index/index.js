@@ -2,20 +2,35 @@
 //获取应用实例
 const app = getApp()
 
+const util = require('../../utils/util.js')
+
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    myMsg: ''
   },
   //事件处理函数
-  bindViewTap: function() {
+  onClickAvatar: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+  onClickMe: function() {
+    this.setData({
+      myMsg: util.formatTime(new Date())
+    })
+    wx.showToast({
+      title: '点击我啊',
+      icon: "none",
+      duration: 3000
+    })
+  },
+
   onLoad: function () {
+    console.log("页面创建时执行")
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -43,7 +58,12 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+
+  onHide: function() {
+    console.log("页面从前台变为后台时执行")
+  },
+
+  onGetUserInfoCallback: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
