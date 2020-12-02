@@ -1,0 +1,6 @@
+<input type="text" style="border:1px solid red; margin: 10rpx;" bindinput="onInputChanged"></input>
+<button bindtap="onTapAdd" data-opt="{{1}}">+</button>
+<button bindtap="onTapDel" data-opt="{{-1}}">-</button>
+<view>
+  {{num}}
+</view>

@@ -1,0 +1,8 @@
+<checkbox-group bindchange="onCheckChanged">
+  <checkbox value="pingguo">苹果</checkbox>
+  <checkbox value="putao">葡萄</checkbox>
+  <checkbox value="xiangjiao">香蕉</checkbox>
+</checkbox-group>
+<view>
+  您选中的水果有：<text wx:for="{{checkedList}}" wx:key="*this" decode>{{item}}&nbsp;</text>
+</view>

@@ -1,0 +1,74 @@
+<text>{{msg}}</text>
+<view>{{num}}</view>
+<view>是否是女孩{{isGirl}}</view>
+<view>{{person.age}}</view>
+<view>{{person.weight}}</view>
+<view>{{person.height}}</view>
+<view>{{person.name}}</view>
+
+<view>
+  <checkbox checked="{{true}}">复选框</checkbox>
+</view>
+
+<!--
+  表达式
+-->
+<view>{{1+1}}</view>
+<view>{{"a"+"b"}}</view>
+<view>{{10%2==0 ? "偶数":"奇数"}}</view>
+
+<!--
+  列表循环
+-->
+<view>
+  <view 
+  wx:for="{{list}}" 
+  wx:for-item="item" 
+  wx:for-index="index"
+  wx:key="id">
+    索引：{{index}}
+    --
+    值：{{item.name}}
+  </view>
+</view>
+
+<!--
+  对象循环
+-->
+<view>
+  <view 
+  wx:for="{{person}}"
+  wx:for-index="key"
+  wx:for-item="value"
+  wx:key="age">
+  {{key}}-{{value}}
+</view>
+</view>
+
+<!--
+  block标签
+  1 占位符标签
+  2 写代码的时候 可以看到这个标签
+  3 渲染的时候没有这个标签
+-->
+<view>
+  <block>block占位标签</block>
+</view>
+
+<!--
+  条件渲染
+-->
+<view>
+  <view>条件渲染</view>
+  <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view>
+
+  <view wx:if="{{num==10000}}">if</view>
+  <view wx:elif="{{num==20000}}">elif</view>
+  <view wx:else>else</view>
+
+  <view hidden="{{false}}">hidden显示</view>
+  <view hidden="{{true}}">hidden隐藏</view>
+
+</view>
+

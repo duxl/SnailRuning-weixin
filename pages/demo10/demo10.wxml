@@ -1,0 +1,8 @@
+<swiper display-multiple-items interval="3000" vertical="{{false}}" circular indicator-dots="{{true}}" autoplay current="2" indicator-color="#999999" indicator-active-color="#FF0000">
+  <swiper-item><image mode="widthFix" src="https://gw.alicdn.com/imgextra/i3/139/O1CN016HMYed1CthgtM6Lfu_!!139-0-lubanu.jpg" /></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB15tIjGVXXXXcoapXXSutbFXXX.jpg" /></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://gw.alicdn.com/imgextra/i1/3/O1CN01BQXCgd1BtPpPkskNp_!!3-0-lubanu.jpg" /></swiper-item>
+  <swiper-item style="background-color:green;">自定义item</swiper-item>
+</swiper>
+
+<navigator url="/pages/demo10/demo10" open-type="navigateBack">返回页面-navigator-navigateBack</navigator>

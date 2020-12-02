@@ -1,0 +1,14 @@
+<button size="default">默认按钮</button>
+<button size="mini">mini</button>
+<button type="primary">primary绿色</button>
+<button type="warn" loading>warn红色</button>
+<!--
+  button的开放能力
+-->
+<button open-type="contact">contact打开客服会话</button>
+<button open-type="share">share触发用户转发</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="onGetPhoneNumber">getPhoneNumber获取用户手机号</button>
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">getUserInfo获取用户信息</button>
+<button open-type="launchApp">launchApp打开APP</button>
+<button open-type="openSetting">openSetting打开授权设置页</button>
+<button open-type="feedback">feedback打开“意见反馈”页面</button>

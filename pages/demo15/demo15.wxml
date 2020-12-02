@@ -1,0 +1,7 @@
+<radio-group bindchange="onChanged">
+  <radio value="boy" checked>男</radio>
+  <radio value="girl" color="#00F">女</radio>
+</radio-group>
+<view>
+  您选中的是：{{gender}}
+</view>

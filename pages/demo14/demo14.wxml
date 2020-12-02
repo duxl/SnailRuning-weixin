@@ -1,0 +1,15 @@
+<!--
+  icon组件
+  
+-->
+<view>
+  <icon type="success"></icon>
+  <icon type="success_no_circle" size="30"></icon>
+  <icon type="info"></icon>
+  <icon type="warn"></icon>
+  <icon type="waiting"></icon>
+  <icon type="cancel"></icon>
+  <icon type="download"></icon>
+  <icon type="search"></icon>
+  <icon type="clear" color="#0000FF"></icon>
+</view>

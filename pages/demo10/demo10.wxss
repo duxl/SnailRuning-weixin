@@ -1,0 +1,12 @@
+/* pages/demo10/demo10.wxss */
+swiper{
+  border: 1px solid blue;
+  width: 100%;
+  height: calc(100vw * 153 / 492);
+}
+image{
+  width: 100%;
+}
+/*
+492*153
+*/

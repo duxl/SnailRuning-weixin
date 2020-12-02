@@ -16,4 +16,8 @@
     <text bindtap="onClickMe">点击我</text> 
     <view>{{myMsg}}</view>
   </view>
+
+  <view style="margin-top: 50rpx">
+    <navigator style="color:blue;" open-type="navigate" url="../test/test">跳转到Test页面1</navigator>
+  </view>
 </view>

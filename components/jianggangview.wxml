@@ -1,0 +1,15 @@
+<!--
+  金刚区组件
+-->
+<view>
+abc
+{{str}}
+  <view wx:for="{{items}}">
+    <view>
+      {{item.name}}
+    </view>
+    <view>
+      {{item.subName}}
+    </view>
+  </view>
+</view>
