@@ -1,0 +1,11 @@
+<!--
+  自定义组件
+  1 父组件向子组件传递数据，是通过属性传递
+-->
+<Tabs tabs="{{tabs}}" binditemChange="onItemChange">
+<u>这里对应自定义组件中的slot占位标签</u>
+<view wx:if="{{tabs[0].isActive}}">{{tabs[0].name}}</view>
+<view wx:if="{{tabs[1].isActive}}">{{tabs[1].name}}</view>
+<view wx:if="{{tabs[2].isActive}}">{{tabs[2].name}}</view>
+<view wx:if="{{tabs[3].isActive}}">{{tabs[3].name}}</view>
+</Tabs>
