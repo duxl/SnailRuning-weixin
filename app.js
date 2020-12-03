@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log("onLaunch 应用第一次启动的时候回调")
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -32,6 +33,19 @@ App({
         }
       }
     })
+  },
+  onShow: function() {
+    console.log("onShow 应用被用户看到的时候触发，经常触发")
+  },
+  onHide: function() {
+    console.log("onHide 应用被隐藏，经常触发")
+  },
+  onError: function(e) {
+    console.log("onError 报错了")
+    console.log(e)
+  },
+  onPageNotFound: function() {
+    console.log("onPageNotFound 应用第一次启动的时候找不到入口页面回调")
   },
   globalData: {
     userInfo: null
